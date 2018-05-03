@@ -45,7 +45,7 @@ import okhttp3.Response;
 
 public class MapsActivity extends FragmentActivity implements OnMapReadyCallback, LocationListener, GoogleMap.OnMyLocationClickListener {
     private static final int PERMISSION_REQUEST_FINE_LOCATION = 1;
-    private final String WEB_SERVICE = "https://baf7ef0f.ngrok.io";
+    private final String WEB_SERVICE = "http://c8f3bc35.ngrok.io";
 
     private String username;
     private String password;
@@ -310,7 +310,7 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
 
                         // location && date format
                         Date date = new Date(timestamp);
-                        DateFormat format = new SimpleDateFormat("hh:mm: a");
+                        DateFormat format = new SimpleDateFormat("MM-dd hh:mm: a");
                         format.setTimeZone(TimeZone.getDefault());
                         String formatted = format.format(date);
 
